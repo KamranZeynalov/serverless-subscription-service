@@ -23,7 +23,7 @@ Resources:
       Environment:
         Variables:
           TABLE_NAME: user
-          FROM_EMAIL: zeynalovkamran767@gmail.com
+          FROM_EMAIL: xajame7085@jxbav.com
       Policies:
         - AmazonDynamoDBFullAccess
         - AmazonSESFullAccess
