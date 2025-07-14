@@ -112,6 +112,9 @@ Verify email using the token.
 
 ## 🚀 Deployment (via SAM)
 
+> ⚙️ **Pre-requisites**:  
+> Make sure you have the **AWS CLI** and **AWS SAM CLI** installed and configured locally with appropriate credentials.
+
 ```bash
 # 1. Build
 sam build
