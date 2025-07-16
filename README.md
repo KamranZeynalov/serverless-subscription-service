@@ -29,7 +29,7 @@ This project implements a fully serverless email subscription system where users
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 Tech Stack
 
 - **Language:** Java 17
 - **Build Tool:** Maven
@@ -125,7 +125,7 @@ sam deploy --guided
 ```
 ---
 
-## 🖼️ Screenshots
+## 📖 Screenshots
 
 ### 🚀 API Gateway
 ![API Gateway](assets/api-gateway.PNG)
