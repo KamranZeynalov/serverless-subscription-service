@@ -54,16 +54,26 @@ This project implements a fully serverless email subscription system where users
 
 ---
 
+## 📊 Architecture Diagram
+
+![Architecture Diagram](assets/architecture-diagram.PNG)
+
+### 🔁 Flow Summary
+
+1️⃣ User submits email via `POST /signup` to API Gateway.  
+2️⃣ API Gateway triggers the **Signup Lambda**.  
+3️⃣ The Lambda generates a UUID token and stores it in **DynamoDB** with user email and `verified=false`.  
+4️⃣ The same Lambda calls **Amazon SES** to send a verification email.  
+5️⃣ User receives an email with a link (`GET /verify?token=...`).  
+6️⃣ User clicks the link, which hits API Gateway again.  
+7️⃣ API Gateway invokes the **Verify Lambda**.  
+8️⃣ The Lambda validates the token and updates `verified=true` in DynamoDB.
+
+---
+
 ## 🧭 Live Demo
 
 ![Live Demo](assets/live-demo.gif)
-
-**Flow Summary:**
-1. User submits email via `POST /signup`.
-2. App generates a UUID token and stores it in DynamoDB with `verified=false`.
-3. SES sends an email with a verification link containing the token.
-4. User clicks the link, which triggers `GET /verify?token=...`.
-5. Lambda validates token and updates `verified=true` in DynamoDB.
 
 ---
 
