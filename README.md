@@ -19,6 +19,7 @@ This project implements a fully serverless email subscription system where users
 
 - [Tech Stack](#-tech-stack)
 - [Features](#-features)
+- [Architecture Diagram](#-architecture-diagram)
 - [Live Demo](#-live-demo)
 - [API Endpoints](#-api-endpoints)
 - [Secrets & Configs](#-secrets--configs)
